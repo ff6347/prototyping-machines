@@ -1,0 +1,27 @@
+Dokumentation
+
+Hallo alle Zusammen,
+
+Vielen Dank für dieses letzte spannende Seminar. Ich hoffe ihr hattet Spaß. auch wenn die letzten 2-3 Wochen stressig waren.  
+
+Damit eure Arbeiten nicht in einem dunklen Kämmerlein untergehen und um einen Schein von mir zu erhalten, müsst ihr eine Dokumentation anlegen. Zu dokumentieren sind:  
+
+- Keyboard Hack Proto (Pro Person)
+- Video Proto (Pro Team)
+- Hardware Proto (Die Boxen) (Pro Gruppe + "TLDR" Zusammenfassung des Box Papers von allen)
+
+Für die Boxen wäre es toll wenn ihr euch noch einmal trefft und ein Video von denen macht, bevor ihr sie wieder zerlegt um mir die Hardware zurück zu geben.  
+
+Ich möchte gerne Pro Projekt mindestens:  
+
+- 1 × index.md (mindestens 500 Wörter dazu noch ein paar Meta Daten)
+- 1 × splash.png (Splash Image 1920 × 1080 Pixel PNG das representativ für euer Projekt ist)
+- 1 × thumb.png (128 × 128 Pixel PNG das representativ für euer Projekt ist)
+- alle weiteren Bilder in einem 16:9 Format in einem Ordner genannt `images`
+    + 800 × 450px
+    + 1280 × 720px
+    + 1920 × 1080px
+
+Bitte guckt euch das example-project an. In der index.md seht ihr die Meta Daten die ihr ausfüllen müsst. Das splash.png Bild und der Titel als H1 werden automatisch eingefügt. Das Müsst ihr nicht machen. Markdown-Formatierung beginnt also bei H2 (`## `).
+
+Dafür habe ich ein GitHub Repository angelegt in das ihr alle rein arbeiten könnt.
