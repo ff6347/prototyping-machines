@@ -12,25 +12,11 @@ summary: "A cup, which helps to organise and automat your morning routine."
 
 
 
-- hack a HID (human interface device)
-- give a physical representation to a digital action
-- test at least 5 Users
-- classify your Prototype with Houde & Hills system  
-
 The task of this prototype is to give a physical representation to a digital action. This had to be achived by a HID-Hack — the disassembling and reporposing of a human interface device e. g. a keyboard. To eveluate the prototype, usertests with at least five participants shal be made.
 
 
 
 ## Idea: Alfredo
-
-The Idea behind Alfredo is the automatation of your daily morning routine.
-
-- set the timer automatically when water is poored into the cup
-- sends Messanges directly onto your Phone
-- activates iTunes Playlist
-- suggests interesting articles on Medium or other news sites
-- gives information about the current weather
-- gives the current treaveling time to your workingplace
 
 
 
@@ -44,10 +30,6 @@ Summerising this Alfredo is a collection of timed actions triggered by the tea b
 ## Implementation
 
 ### HID-Hack
-
-- disassemble keyboard
-- solder the contacts to mach a key on the keyboard
-- assign an action to the key (KeyboardMaestro)
 
 To build the electronic part of the cup a keyboard has been disassembled. To address certen keys from the keyboard, two contacts need to be connected and close the circuit. Therefore wires have been solderd these contacts.
 To create a connection between the contacts whenever water is poored into the cup, it also needs conducting material. Two stripes of aluminium foil are sticked to the saucer and to the cup. These stripes need to reach into the cup so conductivity of the water connects the material and closes the circuit. The wires from the Keyboard are mounted onto each stripe on the saucer. 
@@ -66,24 +48,11 @@ tell application "Messages"
 	send "Guten Morgen! Dein Timer ist gesetzt. Hier sind ein paar interessante Arikel für die Wartezeit: medium://open/" to theBuddy
 
 end tell
-
 ```
 
 
 
-### Cup
-
-- stick aluminium foil onto the cup and the saucer
-- stick wire to the aluminium foil
-- the circuit is colsed once the cup is filled with water
-- it is opend whene the cup is liftet – no current while drinking
-- script, which sends messages from Laptop to phone in determined intervals
-
-
-
 ## Usertesting
-
-qualitiative reserch with 5 participants
 
 To eveluate the outcome there had to be a usertestin with five participants. A qualitative research method was chosen to detect the main strenghs and weaknesses of this prototype. The participants have been invited to an open discussion with a demonstration of the prototype. To lead the discussion some questions have been predifined which should be the start of a open debate.
 
@@ -96,17 +65,6 @@ To eveluate the outcome there had to be a usertestin with five participants. A q
 - Is there anything you disliked about it?
 
 ### Results
-
-- 4 out of 5 would use Alfredo
-- possibility to personalise the routine is very important
-- need for a simple user interface on the phone
-- further timer for drinking temperature proposed
-- positive: think less in the morning
-- push-messages better than iMessages
-- wires & laptop are disturbing
-- worries because of the current
-- bigger cup for tea
-- vintage stile is very appealing
 
 The results of the Usertesting are positive overall.
 Four of the five participants claimed that they would buy Alfredo and use it in their daily lifes. One mayour argument for the use of Alfredo was the fact that it takes over some tasks which you do not need to think of any more.
@@ -121,8 +79,6 @@ Minor criticism has been mentioned about the cupsize beeing to small for tea. Th
 
 
 ## Conclusion
-
-- Houde & Hills system
 
 This prototype represents the role of Alfredo in our daily lifes. Implementation and look are not redefined enough jet to suit the custemers needs. Therefore the classification in Houde & Hills system would look as followed:
 
