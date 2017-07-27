@@ -3,16 +3,20 @@ layout: default
 title: "Box-Net
 author: "Paul Röder, Sujing Lin, Daniel Boubet, Nina Botthof"
 author-url: "PUT ONE ONLINE PRESENSE HERE (TWITTER, INCOM, GITHUB, ETC)"
-summary: "WRITE A SHORT SUMMARY HERE FOR YOUR PROJECT"
+summary: "An indefinitely expandable, distributed network of connected boxes."
 ---
 
 
 
-## conzept
+## Initial Concept
 
 
 
-## construction
+## Revised Concept
+
+
+
+## Construction
 
 
 
@@ -22,7 +26,7 @@ summary: "WRITE A SHORT SUMMARY HERE FOR YOUR PROJECT"
 
 #### Implementation
 
-##### construction
+##### Construction
 
-##### code
+##### Code
 
