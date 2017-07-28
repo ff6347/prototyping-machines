@@ -2,7 +2,7 @@
 layout: default
 title: "Box-Net
 author: "Paul Röder, Sujing Lin, Daniel Boubet, Nina Botthof"
-author-url: "PUT ONE ONLINE PRESENSE HERE (TWITTER, INCOM, GITHUB, ETC)"
+author-url: "PUT ONE ONLINE PRESENCE HERE (TWITTER, INCOM, GITHUB, ETC)"
 summary: "An indefinitely expandable, distributed network of connected boxes."
 ---
 
@@ -43,7 +43,7 @@ The camera pivots in regular intervals from left to right and back. The LED is s
 
 #### Infected
 
-The camera and the LED act unpredictable and unregularily.
+The camera and the LED act unpredictable and irregularly.
 
 
 
@@ -52,7 +52,7 @@ The camera and the LED act unpredictable and unregularily.
 ##### Construction
 
 On one edge of the box is a cut out window. The camera is located inside the box and points out of the window.  
-The camera is, like the box, constructed out of cardboard. To give a more realistic impression, there is a lens from an old web cam and a red LED on the front. It also has a rack to hold the camera in position. A motor is mounted inside the rack, right under the camera, to controll the cameras movement.
+The camera is, like the box, constructed out of cardboard. To give a more realistic impression, there is a lens from an old web cam and a red LED on the front. It also has a rack to hold the camera in position. A motor is mounted inside the rack, right under the camera, to control the cameras movement.
 
 
 
@@ -184,6 +184,91 @@ void loop() {
     }
 
   }
+}
+```
+
+
+
+### Stove Box
+
+This box represents an oven and is especially vulnerable as an infection could lead to fires and serious injuries. The first concept featured a dummy fire made out of acrylic glass which appears when the box is infected. Due to the mechanical complexity this function was dropped.
+
+#### Normal
+
+The stove box can onely recieve signals and pass them trough. Whenever it has an input, the cooktop lights up and fades out slowly. The recieved signal is passed trough when the action is finished.
+
+#### Infected
+
+The cooktop lights up asynchronously and in irregular intervals.
+
+
+
+#### Implementation
+
+##### Construction
+
+On the upper side of the box are 4 holes cut out for the cooktop which has been simulated with 4 LEDs per hotplate. To get closer to the real look of a cooktop, the LEDs are covered with a translucent paper with a radial dot pattern printed onto it. This gives a good visual impression of an oven. Aditionally, there is a funnel made out of red paper to amplify the intensity of the LEDs. The frontside of the box is also cut out in a rectangular shape for the oven. Due to the restriction of only 3.3 V, there are no LEDs and no funktionality added to this feature. It has been kept in to maintain the look of an ordinary kitchen stove. Therefore there is only another sheet of translucent paper to cover up the hole.
+
+
+
+##### Code
+
+A major problem with this box was the fading of the LEDs. The use of a shift registry was discarded, because this makes fading very difficult. Thus the final implementation has been made with a reduced number of LEDs connected in parallel. Then the fading was acomplished by using pulse-width modulation.
+
+
+
+```
+#include <XNode.h>
+
+int ledPinOne = 14;// was anderes nehemen! LED connected to digital pin 9
+int ledPinTwo = 15;
+int output_pin = 0;
+int output_virus_pin = 2;
+int input_pin = 4;
+int input_virus_pin = 5;
+XNode node(input_pin, output_pin, input_virus_pin, output_virus_pin);
+
+boolean action = false;
+
+void setup () {
+  node.init();
+  pinMode(ledPinOne, OUTPUT);
+  pinMode(ledPinTwo, OUTPUT);
+  Serial.begin(115200);
+}
+
+void loop() {
+  
+Serial.println(node.listen());
+  if(node.listen() == true && action == false){
+    action = true;
+    Serial.println(action);
+  }
+
+  if(action == true){
+    
+    // fade in from min to max in increments of 5 points:
+    for (int fadeValue = 0 ; fadeValue <= 1023; fadeValue += 20) {
+      // sets the value (range from 0 to 255):
+      analogWrite(ledPinOne, fadeValue);
+      analogWrite(ledPinTwo, fadeValue);
+      // wait for 30 milliseconds to see the dimming effect
+      delay(30);
+    }
+
+    // fade out from max to min in increments of 5 points:
+    for (int fadeValue = 1023 ; fadeValue >= 0; fadeValue -= 20) {
+      // sets the value (range from 0 to 255):
+      analogWrite(ledPinOne, fadeValue);
+      analogWrite(ledPinTwo, fadeValue);
+      // wait for 30 milliseconds to see the dimming effect
+      delay(30);
+    }
+    node.send();
+    action = false; // action wird nach dem Fading zurückgesetzt
+    Serial.println(action);
+  }
+  
 }
 ```
 
