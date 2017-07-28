@@ -10,40 +10,40 @@ summary: "An indefinitely expandable, distributed network of connected boxes."
 
 ## Initial Concept
 
-The first draft of the projekt was a game, which explaines the daingers of Bot-Networks invaiding connected IOT-Devices. As the everyday life becomes more technical and every device is connected to the internet, security issues are more harmful than ever before. The game Box-Net wants to illustrate the perils of Bots being passed from one device to another and the damage they bring about.  
-Box-Net consists of multiple small boxes, each representing one IOT-Device in a network. These Boxes can be pluged together to illustrate the interconnectivity of such devices. But there are viruses that can be passed through and flaw the boxes funktionality. The funktionality of the boxes can only be restored by keeping the firmware up to date via a Patch-Button. Main Goal is it to connect as much boxes as possible while keeping them uninfected.
+The first draft of the project was a game, which explains the dangers of bot networks invading connected IoT devices. As the everyday life becomes more technical and every device is connected to the internet, security issues are more harmful than ever before. The game Box-Net wants to illustrate the perils of bots being passed from one device to another and the damage they bring about.  
+Box-Net consists of multiple small boxes, each representing one IoT device in a network. These boxes can be plugged together to illustrate the interconnectivity of such devices. But there are viruses that can be passed through and flaw the boxes functionality. The functionality of the boxes can only be restored by keeping the firmware up to date via a patch button. The goal is to connect as much boxes as possible while keeping them uninfected.
 
 
 
 ## Revised Concept
 
-Due to time shortage the intitial concept had to be revised in order to be finished on Werkschau.  
-The idea of Box-Net was cut down to the essentials: an interconnected system. It still features the boxes each representing one device e. g. the lamp. These boxes can be connected to eachother and react on a signal that is being passed through. This way the players can explore the different combinations an how the boxes react.  
-To keep the network as simple as possible there are only two classes: sending; and recieving boxes. The sending boxes are always switched on and output a signal, they can not recieve any signals. Recieving boxes on the other hand can only react to incomming signals an only execute an action when they have input.  
+Due to time shortage the initial concept had to be revised in order to be finished on Werkschau.  
+The idea of Box-Net was cut down to the essentials: an interconnected system. It still features the boxes, each representing one device e. g. a lamp. The boxes can be connected to each other and react on a signal that is being passed through. This way the players can explore the different combinations an how the boxes react.  
+To keep the network as simple as possible there are only two classes: sending and receiving boxes. The sending boxes are always switched on and output a signal, they can not receive any signals. Receiving boxes on the other hand can only react to incoming signals and only execute an action when they have input.  
 
 
 ## Construction
 
-For the hardware compound of the boxes the adafruit feather huzzah has been used. Main factor for that decision was the built in Ion-Lithium-Battery-Plug.  
-The outer construction of the boxes was made out of a very strong cardboard. It is very light compared to MDF or acrylic glass and additionally cheaper than any other comparable material.  
+For the hardware compound of the boxes the Adafruit Feather Huzzah has been used. Main factor for that decision was the built in lithium-ion battery plug.  
+The outer construction of the boxes was made out of a strong cardboard. It is lightweight compared to MDF or acrylic glass and additionally cheaper than any other comparable material.  
 
 
 ## Boxes
 
 ### Surveillance Box
 
-This box represents a security system. Especially surveillance cameras are knowen to be very vulnerable to bot attacs.  
+This box represents a security system. Surveillance cameras in particular are known to be very vulnerable to bot attacks.  
 Inside the box there is a camera dummy with a built in motor and LED.
 
 In the initial concept there where two kinds of funktionallity: normal and infected. 
 
 #### Normal
 
-The camera pivots in regular intervals from left to right and back. The LED is switched on and off simultaneously. It can initiate a signal and is switched on from the beginning.
+The camera pivots in regular intervals from left to right and back. The LED is blinking simultaneously. It can initiate a signal and is switched on from the beginning.
 
 #### Infected
 
-The camera and the LED act unpredictable and irregularly.
+The camera and the LED act unpredictably and irregularly.
 
 
 
@@ -51,14 +51,14 @@ The camera and the LED act unpredictable and irregularly.
 
 ##### Construction
 
-On one edge of the box is a cut out window. The camera is located inside the box and points out of the window.  
-The camera is, like the box, constructed out of cardboard. To give a more realistic impression, there is a lens from an old web cam and a red LED on the front. It also has a rack to hold the camera in position. A motor is mounted inside the rack, right under the camera, to control the cameras movement.
+On one edge of the box is a cut-out window. The camera is located inside the box and points out of the window.  
+The camera is, like the box, constructed out of cardboard. To give a more realistic impression, there is a lens from an old web cam and a red LED on the front. It also has a rack to hold the camera in position. A motor is mounted inside the rack, right under the camera, to control the camera’s movement.
 
 
 
 ##### Code
 
-One main issue of this box was to move the motor and switch the LED on and off simultaniously. Normally there can only one action be executed at a time. To avoid this problem timed action library has been used. It helps coordinate multiple actions by defining intervals.
+One main issue of this box was to switch the LED on and off and move the motor  simultaneously. Normally only one action can be executed at a time. To solve this problem `TimedAction.h` has been used. It helps coordinating multiple actions by defining intervals.
 
 
 
@@ -191,15 +191,15 @@ void loop() {
 
 ### Stove Box
 
-This box represents an oven and is especially vulnerable as an infection could lead to fires and serious injuries. The first concept featured a dummy fire made out of acrylic glass which appears when the box is infected. Due to the mechanical complexity this function was dropped.
+This box represents an oven and is especially vulnerable as an infection could lead to fires and serious injuries. The first concept featured a dummy fire made out of acrylic glass which appears when the box is infected. Due to the mechanical complexity this function has been dropped.
 
 #### Normal
 
-The stove box can onely recieve signals and pass them trough. Whenever it has an input, the cooktop lights up and fades out slowly. The recieved signal is passed trough when the action is finished.
+The stove box can only receive signals and pass them through. Whenever it has an input, the cooktop lights up and fades out slowly. The received signal is passed through when the action is finished.
 
 #### Infected
 
-The cooktop lights up asynchronously and in irregular intervals.
+The cooktop lights up asynchronously and at irregular intervals.
 
 
 
@@ -207,13 +207,13 @@ The cooktop lights up asynchronously and in irregular intervals.
 
 ##### Construction
 
-On the upper side of the box are 4 holes cut out for the cooktop which has been simulated with 4 LEDs per hotplate. To get closer to the real look of a cooktop, the LEDs are covered with a translucent paper with a radial dot pattern printed onto it. This gives a good visual impression of an oven. Aditionally, there is a funnel made out of red paper to amplify the intensity of the LEDs. The frontside of the box is also cut out in a rectangular shape for the oven. Due to the restriction of only 3.3 V, there are no LEDs and no funktionality added to this feature. It has been kept in to maintain the look of an ordinary kitchen stove. Therefore there is only another sheet of translucent paper to cover up the hole.
+On the upper side of the box are four holes cut out for the cooktop which has been simulated with four LEDs per hotplate. To get closer to the real look of a cooktop, the LEDs are covered with a translucent paper with a radial dot pattern printed onto it. This gives a good visual impression of an oven. Additionally, there is a funnel made out of red paper to amplify the intensity of the LEDs. The frontside of the box is also cut out in a rectangular shape for the oven. Due to the restriction of only 3.3 V, there are no LEDs and no functionality added to this feature. It has been kept in to maintain the look of an ordinary kitchen stove. Therefore there is only another sheet of translucent paper to cover up the hole.
 
 
 
 ##### Code
 
-A major problem with this box was the fading of the LEDs. The use of a shift registry was discarded, because this makes fading very difficult. Thus the final implementation has been made with a reduced number of LEDs connected in parallel. Then the fading was acomplished by using pulse-width modulation.
+A major problem with this box was the fading of the LEDs. The use of a shift registry was discarded, because this made fading very difficult. Thus the final implementation has been made with a reduced number of LEDs connected in parallel. Then the fading was accomplished by using pulse-width modulation.
 
 
 
