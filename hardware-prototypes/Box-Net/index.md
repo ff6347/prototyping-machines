@@ -217,7 +217,7 @@ A major problem with this box was the fading of the LEDs. The use of a shift reg
 
 
 
-```
+```c
 #include <XNode.h>
 
 int ledPinOne = 14;// was anderes nehemen! LED connected to digital pin 9
