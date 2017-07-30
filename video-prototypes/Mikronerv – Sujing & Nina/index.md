@@ -16,15 +16,7 @@ The task of this assignment was to make a video prototype to illustrate a device
 
 ## Idea
 
-- annoying microwave
-  - sound
-  - needs lot of maintainence
-  - does not work properly
-  - complicated
-  - patronising
-- has to be well-intendtioned
-- health care, nutrition
-- device decides what you are allowed to eat
+
 
 One major challenge was to assign the character annoying to the microwave. First there had to be defined, how a microwave could act annoyingly. These five approaches where considered:
 
@@ -46,19 +38,9 @@ Patronising devices are most oftenly used in the context of health and fitness. 
 
 ## Story
 
-- Women sits in a chair and reads a book; stomac rumbling
-- goes to the fridge; gets bag with cheese straw
-- places food in front of microwave; scans food; bad ranking – permission denied
-- woman is already a bit annoyed by disobedience
-- 2 try: goes to the fridge; gets bag with doughnut
-- places food in front of microwave; scans food; bad ranking – permission denied
-- woman really annoyed by disobedience
-- gets vegetables out of fridge, slams them on the table
-- scans food; good ranking – permission granted; door opens
-- woman has idea
-- places unhealthy food in the opened mikrowave & starts programm
-- waiting until finished
-- annoying sound
+A jung woman is hungry and wants to prepare some food with the microwave. She places a cheese straw in front of the microwave to scan it. The microwave displays a bad noutritional factor and denies to reheat it. The woman is disappointed and tries to warm up some other food, this time it is a doughnut. The microwave denies permission ones again and the woman is outraged. She gets herself some vegetables and slams them onto the desk in front of the microwave. The micorwave scans the food; this time it classifies it as nourishing and grants permission: the door opens. The woman has an idea: she tricks the microwave by placing the unhealthy cheese straw inside the opened microwave and starts the programm. The microwave proceeds to warm up the food.
+
+
 
 ## Realisation
 
