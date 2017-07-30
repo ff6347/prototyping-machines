@@ -38,14 +38,12 @@ Patronising devices are most oftenly used in the context of health and fitness. 
 
 ## Story
 
-A jung woman is hungry and wants to prepare some food with the microwave. She places a cheese straw in front of the microwave to scan it. The microwave displays a bad noutritional factor and denies to reheat it. The woman is disappointed and tries to warm up some other food, this time it is a doughnut. The microwave denies permission ones again and the woman is outraged. She gets herself some vegetables and slams them onto the desk in front of the microwave. The micorwave scans the food; this time it classifies it as nourishing and grants permission: the door opens. The woman has an idea: she tricks the microwave by placing the unhealthy cheese straw inside the opened microwave and starts the programm. The microwave proceeds to warm up the food.
+A young woman is hungry and wants to prepare some food with the microwave. She places a cheese straw in front of the microwave to scan it. The microwave displays a bad nutritional factor and denies to reheat it. The woman is disappointed and tries to warm up some other food, this time it is a doughnut. The microwave denies permission ones again and the woman is outraged. She gets herself some vegetables and slams them onto the desk in front of the microwave. The microwave scans the food; this time it classifies it as nourishing and grants permission: the door opens. The woman has an idea: she tricks the microwave by placing the unhealthy cheese straw inside the opened microwave and starts the program. The microwave proceeds to warm up the food.
 
 
 
 ## Realisation
 
-- setting
-- actor
-- style
-- music and sounds
-- CG
+The interface of the microwave was made in Illustrator and mapped onto the surface with adobe after effects. Particularly challanging where the scenes where the actress covers parts of the UI with her body. For those cases masks have been made to avoid the interface appearing on the actresses skin.   
+The style of the interface had to match the microwave therefore a retro style has been chosen. The top bar shows the scanning process; the heart icons symbolise the nurtrients—the more hearts are light up, the healthier is the food. On the left side of the screen there is a lock simbol: when it displays a red cross, permission is denied; when it displays a green check mark, permission is granted.  
+Additionally, a special sound design had been added. It rounds out the user experience and gives a realistic impression.
