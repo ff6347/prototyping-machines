@@ -6,6 +6,8 @@ author-url: "https://paulroeder.com"
 summary: "Hacking a keyboard to make humans compatible again."
 ---
 
+WORK IN PROGESSS
+
 Books like Martin Fords "Rise of the Robots: Technology and the Threat of a Jobless Future" comprehensively argue that the role of human labour will dramatically change in the future. All jobs that can be automated by machines, will be automated eventually. Emerging technologies leads us to the next industrial revolution. But until the industries are entirely everted, human labor will still have to compete against machines in terms of efficiency and accuracy. The problem: Humans tend to chat, rest, wait, eat or even sleep.
 
 ## What if humans could act like machines?
