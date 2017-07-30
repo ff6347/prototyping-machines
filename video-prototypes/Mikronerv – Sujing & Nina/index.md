@@ -31,7 +31,7 @@ One major challenge was to assign the character annoying to the microwave. First
 5. Patronising
    When the device has more power to decide over or command the user. e. g. the apple watch that tells the user when to stand up and move.
 
-Eventually the patronising microwave has been chosen, because it fits a futuristic setting best. Also, the microwave should not be malfunctioning in the fist place: it should be percived annoying because it works as promised.  
+Eventually the patronising microwave has been chosen, because it fits a futuristic setting best. Also, the microwave should not be malfunctioning in the fist place: it should be perceived annoying because it works as promised.  
 Patronising devices are most oftenly used in the context of health and fitness. Therefore a microwave that examines the nutritiousness of the food was contrived. It scans the food and displays the nutritional factor on the glass front. Whenever the food is not healthy enough it refuses to open the door. This way the user should be forced to a healthy diet.
 
 
@@ -48,6 +48,6 @@ A young woman is hungry and wants to prepare some food with the microwave. She p
 
 
 
-The interface of the microwave was made in Illustrator and mapped onto the surface with adobe after effects. Particularly challanging where the scenes where the actress covers parts of the UI with her body. For those cases masks have been made to avoid the interface appearing on the actresses skin.   
+The interface of the microwave was made in Illustrator and mapped onto the surface with adobe after effects. Particularly challenging where the scenes where the actress covers parts of the UI with her body. For those cases masks have been made to avoid the interface appearing on the actresses skin.   
 The style of the interface had to match the microwave therefore a retro style has been chosen. The top bar shows the scanning process; the heart icons symbolise the nutrients—the more hearts are light up, the healthier is the food. On the left side of the screen there is a lock symbol: when it displays a red cross, permission is denied; when it displays a green check mark, permission is granted.  
 Additionally, a special sound design had been added. It rounds out the user experience and gives a realistic impression.
