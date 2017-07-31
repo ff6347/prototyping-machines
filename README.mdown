@@ -1,6 +1,6 @@
 Prototyping Machines
 
-## Writing Dokumentation
+## Writing Documentation
   
 
 - Keyboard Hack Proto (per person)
