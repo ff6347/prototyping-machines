@@ -22,10 +22,14 @@ The idea of Box-Net was cut down to the essentials: an interconnected system. It
 To keep the network as simple as possible there are only two classes: sending and receiving boxes. The sending boxes are always switched on and output a signal, they can not receive any signals. Receiving boxes on the other hand can only react to incoming signals and only execute an action when they have input.  
 
 
+
+
 ## Construction
 
 For the hardware compound of the boxes the Adafruit Feather Huzzah has been used. Main factor for that decision was the built in lithium-ion battery plug.  
 The outer construction of the boxes was made out of a strong cardboard. It is lightweight compared to MDF or acrylic glass and additionally cheaper than any other comparable material.  
+
+
 
 
 ## Boxes
@@ -36,6 +40,8 @@ This box represents a security system. Surveillance cameras in particular are kn
 Inside the box there is a camera dummy with a built in motor and LED.
 
 In the initial concept there where two kinds of funktionallity: normal and infected. 
+
+![Surveillance Box](images/cam.jpg)
 
 #### Normal
 
@@ -54,7 +60,7 @@ The camera and the LED act unpredictably and irregularly.
 On one edge of the box is a cut-out window. The camera is located inside the box and points out of the window.  
 The camera is, like the box, constructed out of cardboard. To give a more realistic impression, there is a lens from an old web cam and a red LED on the front. It also has a rack to hold the camera in position. A motor is mounted inside the rack, right under the camera, to control the camera’s movement.
 
-
+![Inside the box.](images/cam-board.jpg)
 
 ##### Code
 
@@ -193,9 +199,13 @@ void loop() {
 
 This box represents an oven and is especially vulnerable as an infection could lead to fires and serious injuries. The first concept featured a dummy fire made out of acrylic glass which appears when the box is infected. Due to the mechanical complexity this function has been dropped.
 
+![Stove Box](images/stove.jpg)
+
 #### Normal
 
 The stove box can only receive signals and pass them through. Whenever it has an input, the cooktop lights up and fades out slowly. The received signal is passed through when the action is finished.
+
+![Close-up of the cooktop.](images/stove-closeup.jpg)
 
 #### Infected
 
@@ -208,8 +218,6 @@ The cooktop lights up asynchronously and at irregular intervals.
 ##### Construction
 
 On the upper side of the box are four holes cut out for the cooktop which has been simulated with four LEDs per hotplate. To get closer to the real look of a cooktop, the LEDs are covered with a translucent paper with a radial dot pattern printed onto it. This gives a good visual impression of an oven. Additionally, there is a funnel made out of red paper to amplify the intensity of the LEDs. The frontside of the box is also cut out in a rectangular shape for the oven. Due to the restriction of only 3.3 V, there are no LEDs and no functionality added to this feature. It has been kept in to maintain the look of an ordinary kitchen stove. Therefore there is only another sheet of translucent paper to cover up the hole.
-
-
 
 ##### Code
 
