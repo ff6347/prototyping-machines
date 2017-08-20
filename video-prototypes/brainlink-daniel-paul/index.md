@@ -3,7 +3,7 @@ layout: default
 title: "Brainlink Research Lab"
 author: "Daniel Boubet, Paul Roeder"
 author-url: "http://paulroeder.com - https://incom.org/profil/7955"
-summary: "We video-prototyped a brain interface, that was applied to control a domestic device."
+summary: "We video-prototyped a brain interface to control a domestic device."
 ---
 
 # Brainlink Research Lab
@@ -18,9 +18,7 @@ After a kick-off workshop on After Effect we were well prepared to create our ow
 
 ## The irascible iron
 
-<iframe src="https://player.vimeo.com/video/216327129" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-[Watch our video on Vimeo](https://vimeo.com/user16473837)
+[![The irascible iron](images/video-thumb.png)](https://vimeo.com/216327129)
 
 
 Daniel Boubet and Paul Roeder collaborated to prototype a "irascible iron". Since this negatively connoted adjective usually would not be a typical attribute of a commercial product, we tried to think of a way how the iron might be "hot-tempered" on a meaningful way.
