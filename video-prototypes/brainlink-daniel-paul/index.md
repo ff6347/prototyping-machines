@@ -21,7 +21,7 @@ After a kick-off workshop on After Effect we were well prepared to create our ow
 [![The irascible iron](images/video-thumb.png)](https://vimeo.com/216327129)
 
 
-Daniel Boubet and Paul Roeder collaborated to prototype a "irascible iron". Since this negatively connoted adjective usually would not be a typical attribute of a commercial product, we tried to think of a way how the iron might be "hot-tempered" on a meaningful way.
+Daniel Boubet and Paul Roeder collaborated to prototype an "irascible iron". Since this negatively connoted adjective usually would not be a typical attribute of a commercial product, we tried to think of a way how the iron might be "hot-tempered" on a meaningful way.
 
 For this reason we envisioned the story around the fictional "FHP Brainlink Research Group", working on a novel brain interface technology that enables research subjects to control objects just by using there mind. In this way even domestic appliances can be controlled.
 
