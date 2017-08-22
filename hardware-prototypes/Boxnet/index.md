@@ -129,7 +129,7 @@ The counter is built based on a 7 segment counter. Rows of orange leds connected
 The Code uses the <Ticker.h> library that allows a count from 0 to 9. A shift register was necessary in order to get more Outputs from the board to control several rows of leds.
 
 
-[Open the source code of this box](hardware_code/Read_boxes/Stove_nina)
+[Open the source code of this box](hardware_code/Write_boxes/Daniel_elevator)
 
 ___________________________
 
@@ -147,7 +147,7 @@ The code makes the ventilator run for 10 seconds everytime that recieves an inpu
 
 
 
-[Open the source code of this box](hardware_code/Read_boxes/Stove_nina)
+[Open the source code of this box](hardware_code/Write_boxes/Ventilator_Daniel)
 
 ___________________________
 
