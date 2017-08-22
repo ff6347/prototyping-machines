@@ -115,17 +115,19 @@ ___________________________
 
 ### Elevator
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+The Box built by Daniel Boubet represents an elevator floor  counter, which counts from the E (Erdgeschoss) to 9 and backwards. The counter will be activated as soon receives an input signal from another box. Every time the Counter makes a cycle, the Box will send a Signal.
 
 ![IMAGE](images/X.jpg)
 
 ##### Construction
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+The counter is built based on a 7 segment counter. Rows of orange leds connected in parallel are placed behind an Acrylglas surface which has been accurately lasercutted and fitted into the cardboard. Every row of leds its separated about 2,5mm from the Acrylglas, in this way the leds will blur. To have a better backlight reflection the rows has been encapsulated in reflecting paper around. 
+
 
 ##### Code
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+The Code uses the <Ticker.h> library that allows a count from 0 to 9. A shift register was necessary in order to get more Outputs from the board to control several rows of leds.
+
 
 [Open the source code of this box](hardware_code/Read_boxes/Stove_nina)
 
@@ -133,17 +135,17 @@ ___________________________
 
 ### Ventilator
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+This box was built to simulate a normal household ventilator.
 
 ![IMAGE](images/X.jpg)
 
 ##### Construction
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-
+The ventilator has been lasercutted on cardboard and it's driven by a 3v taken from a servomotor.
 ##### Code
+The code makes the ventilator run for 10 seconds everytime that recieves an input signal. The ventilator will send aswell a signal every cicle.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+
+
 
 [Open the source code of this box](hardware_code/Read_boxes/Stove_nina)
 
