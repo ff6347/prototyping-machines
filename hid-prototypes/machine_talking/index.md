@@ -27,7 +27,7 @@ The software ["Keyboard Maestro"](https://www.keyboardmaestro.com/main/) on my c
 
 ## Voice outputs
 
-[![Video on Vimeo](images/video-thumb.png)](https://vimeo.com/230607138?autoplay=1)
+[![Video on Vimeo](images/video-thumb.jpg)](https://vimeo.com/230607138?autoplay=1)
 
 [Watch the demo on Vimeo](https://vimeo.com/230607138?autoplay=1)
 
