@@ -8,26 +8,28 @@ summary: "An indefinitely expandable, distributed network of connected boxes."
 
 # Box-Net
 
-Our interactive installation "Boxnet" is a decentralized network of boxes and illustrates the connectivity of everyday devices.
+Our interactive installation "Boxnet" is a decentralized and expandable network of boxes and illustrates the connectivity of everyday devices.
 
-[![The irascible iron](images/trailer.png)](https://vimeo.com/230505896)
+[![The irascible iron](images/trailer.png)](https://vimeo.com/230505896?autoplay=1)
 
 [Watch the trailer on Vimeo](https://vimeo.com/230505896)
 
 ## Concept
 
-As the everyday life is increasingly digitalized and a rising amount of devices are connected to the Internet of Things (IoT), security issues potentially become more crucial than ever before. Hence we considered in an earlier phase of our concept to implement a virus that would have been passed through and flawed the boxes functionality. The original mode could only have been restored by pressing a physical patch button on the box. Users would have been supposed to connect as much boxes as possible while keeping the network uninfected. Due to the complexity of our system we decided to go for simplicity and focus on the interaction between the boxes.
+As the everyday life is increasingly digitalized and a rising amount of devices are connected to the Internet of Things (IoT), security issues potentially become more crucial than ever before. spread in the network and flaw the boxes functionality. The original mode could only have been restored by pressing a physical patch button on the box. Users would connect as much boxes as possible while keeping the network uninfected. Due to the complexity of our system we decided to go for simplicity and focus on the interaction between the boxes.
 
 ## Specification
 
 We designed two box types:
 
 - ***Write Boxes*** have two Output ports. Up to two boxes can be connected directly to receive signals. These signals are based on the individual configuration of the *Write Box*.
-- ***Read Boxes*** are able to receive signals from their Input port. The box can perform an individual action triggered by an input signal. During or after this action the received signal will be passed through the box via its Output ethernet port. Hence a *Read Box* is not able to generate their own impulse, but actives other connected boxes. In this way boxes can be connected in a row while being fed by only one *Write Box*.
+- ***Read Boxes*** are able to receive signals from their Input port. The box can perform an individual action triggered by an input signal. During or after this action the received signal will be passed through the box via its Output ethernet port. Hence a *Read Box* is not able to generate their own impulse, but activates other connected boxes. In this way boxes can be connected in a row while being fed by only one *Write Box*.
 
 ### Hardware & Construction
 
-Each group member contributed two unique boxes to our Boxnet network. However we standardized the hardware basics and box form factor to ensure a consistent impression and hassle-free connectivity.
+Each group member contributed two unique boxes to our Boxnet network. We standardized the hardware basics and box form factor to ensure a consistent impression and hassle-free connectivity.
+
+![Board](images/cam-board.jpg)
 
 - Adafruit Feather HUZZAH ESP8266
 - 3.7 V Lithium Polymer battery
@@ -38,7 +40,7 @@ Each group member contributed two unique boxes to our Boxnet network. However we
 We laser cut the boxes out of binder's board. The templates can be found in the [construction folder](box_construction).
 
 ### XNodes library
-The communication within in the Boxnet network is running on the [XNodes library](https://github.com/FH-Potsdam/XNodes) from Fabian Morón Zirfas.  
+The communication within the Boxnet network is running on the [XNodes library](https://github.com/FH-Potsdam/XNodes) from Fabian Morón Zirfas.  
 
 ## Boxes
 
@@ -76,17 +78,17 @@ ___________________________
 
 ### Security gate
 
-This box by Paul Roeder is a security gate connected to the internet. As soon as the entered passport is correct, this Write box will output a signal.
+This box by Paul Roeder is a security gate connected to the internet. As soon as password is entered correctly, this Write box will output a signal.
 
 ![IMAGE](images/X.jpg)
 
 ##### Construction
 
-On the upper surface of the box there is a 4x4 keypad, a green and red LEDs and a hole to the included piezo buzzer. Since the keypad requires more pins than their are available on the board, I used a PCF8574 port expansion port.
+On the upper surface of the box is a 4x4 keypad, a green and red LEDs and a hole to the build-in piezo buzzer. Since the keypad requires more pins than their are available on the board, I used a PCF8574 port expander.
 
 ##### Code
 
-The code tracks the pressed keys and adds them to a string variable which deletes itself as its length exceeds more than four characters. If the string equals the valid password "1234", the red light switches of and the green LED will be turned on for a few seconds. Also their is a sound feedback coming from the piezo.
+The code tracks the pressed keys and adds them to a string variable which deletes itself if its length exceeds more than four characters. If the string equals the valid password "1234", the red light switches of and the green LED will be turned on for a few seconds. Also their is a sound feedback coming from the piezo.
 
 [Open the source code of this box](hardware_code/Read_boxes/Stove_nina)
 
@@ -94,7 +96,7 @@ ___________________________
 
 ### Clock
 
-This Write box by Paul Roeder stands for a digital clock and displays the current time on a LCD display. Every ten seconds it outputs a signal.
+This Write box by Paul Roeder stands for a digital clock and displays the current time and date on a LCD display. Every ten seconds it outputs a signal.
 
 ![IMAGE](images/X.jpg)
 
@@ -104,7 +106,7 @@ The Nokia 5110 LCD is sticked behind acrylic glass and sets its background light
 
 ##### Code
 
-The box connects to the internet using its built-in Wi-Fi module to request the current time from a time server. The Arduino library "Time.h" ensures that the seconds keep strictly in time. Also their are two libraries from Adafruit integrated to power the LCD display.
+The box connects to the internet using its built-in Wi-Fi module to request the current time from a time server. The Arduino library "Time.h" ensures that the seconds keep strictly in time. Also their are two libraries from Adafruit integrated to power the LCD display. The LCD background light is set by pulse-width modulation (PWM) mapped from a photo resistor value.
 
 
 [Open the source code of this box](hardware_code/Read_boxes/Stove_nina)
