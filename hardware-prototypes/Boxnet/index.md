@@ -78,7 +78,7 @@ One main challenge of this box was to switch the LED on and off and move the mot
 
 ### Security gate
 
-This box by Paul Roeder is a security gate connected to the internet. As soon as password is entered correctly, this Write box will output a signal.
+This box by Paul Roeder is a security gate connected to the internet. As soon as the password is entered correctly, this Write box will output a signal.
 
 ![IMAGE](images/gate.jpg)
 
