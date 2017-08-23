@@ -16,7 +16,7 @@ Our interactive installation "Boxnet" is a decentralized and expandable network 
 
 ## Concept
 
-As the everyday life is increasingly digitalized and a rising amount of devices are connected to the Internet of Things (IoT), security issues potentially become more crucial than ever before. spread in the network and flaw the boxes functionality. The original mode could only have been restored by pressing a physical patch button on the box. Users would connect as much boxes as possible while keeping the network uninfected. Due to the complexity of our system we decided to go for simplicity and focus on the interaction between the boxes.
+As the everyday life is increasingly digitalized and a rising amount of devices are connected to the Internet of Things (IoT), security issues potentially become more crucial than ever before. Hence we considered in an early version of our concept a virus, that spreads in the network and flaws the boxes functionality. The original mode could only have been restored by pressing a physical patch button on the box. Users would connect as much boxes as possible while keeping the network uninfected. Due to the complexity of our system we decided to go for simplicity and focus on the interaction between the boxes.
 
 ## Specification
 
@@ -35,7 +35,7 @@ Each group member contributed two unique boxes to our Boxnet network. We standar
 - 3.7 V Lithium Polymer battery
 - 3.3 V voltage (GPIO pin default)
 - 20x20x20mm box measurements
-- Hacked Ethernet ports
+- Soldered Ethernet ports
 
 We laser cut the boxes out of binder's board. The templates can be found in the [construction folder](box_construction).
 
@@ -45,18 +45,18 @@ The communication within the Boxnet network is running on the [XNodes library](h
 ## Boxes
 
 **Write Boxes**
-- [Surveillance camera](#Surveillance camera)
-- [Safe](#Surveillance camera)
-- [Clock](#Surveillance camera)
+- Surveillance camera
+- Security gate
+- Clock
 
 **Read Boxes**
-- [Elevator](#Surveillance camera)
-- [Ventilator](#Surveillance camera)
-- [Traffic lights](#Surveillance camera)
-- [Lamp](#Surveillance camera)
-- [Stove](#Surveillance camera)
+- Elevator
+- Ventilator
+- Traffic lights
+- Lamp
+- Stove
 
-___________________________
+***
 
 ### Surveillance camera
 
@@ -66,7 +66,7 @@ This box by Nina Botthof represents a security system. Surveillance cameras in p
 
 On one edge of the box is a cut-out window. The camera is located inside the box and points out of the window. The camera is, like the box, constructed out of cardboard. To give a more realistic impression, there is a lens from an old web cam and a red LED on the front. It also has a rack to hold the camera in position. A motor is mounted inside the rack, right under the camera, to control the camera’s movement.
 
-![Inside the box.](images/cam-board.jpg)
+![Camera](images/cam.jpg)
 
 ##### Code
 
@@ -74,116 +74,87 @@ One main challenge of this box was to switch the LED on and off and move the mot
 
 [Open the source code of this box](hardware_code/Write_boxes/Camera_nina)
 
-___________________________
+***
 
 ### Security gate
 
 This box by Paul Roeder is a security gate connected to the internet. As soon as password is entered correctly, this Write box will output a signal.
 
-![IMAGE](images/X.jpg)
+![IMAGE](images/gate.jpg)
 
 ##### Construction
 
-On the upper surface of the box is a 4x4 keypad, a green and red LEDs and a hole to the build-in piezo buzzer. Since the keypad requires more pins than their are available on the board, I used a PCF8574 port expander.
+On the upper surface of the box is a 4x4 keypad, a green and red LED and a hole to the build-in piezo buzzer. Since the keypad requires more pins than their are available on the board, I used a PCF8574 port expander.
 
 ##### Code
 
 The code tracks the pressed keys and adds them to a string variable which deletes itself if its length exceeds more than four characters. If the string equals the valid password "1234", the red light switches of and the green LED will be turned on for a few seconds. Also their is a sound feedback coming from the piezo.
 
-[Open the source code of this box](hardware_code/Read_boxes/Stove_nina)
+[Open the source code of this box](hardware_code/Write_boxes/SecurityGate_paul)
 
-___________________________
+***
 
 ### Clock
 
 This Write box by Paul Roeder stands for a digital clock and displays the current time and date on a LCD display. Every ten seconds it outputs a signal.
 
-![IMAGE](images/X.jpg)
+![IMAGE](images/clock2.jpg)
 
 ##### Construction
 
 The Nokia 5110 LCD is sticked behind acrylic glass and sets its background light level based on the amount of light to safe energy.
 
+![IMAGE](images/clock.jpg)
+
 ##### Code
 
-The box connects to the internet using its built-in Wi-Fi module to request the current time from a time server. The Arduino library "Time.h" ensures that the seconds keep strictly in time. Also their are two libraries from Adafruit integrated to power the LCD display. The LCD background light is set by pulse-width modulation (PWM) mapped from a photo resistor value.
+The box connects to the internet using its built-in Wi-Fi module to request the current time from a time server. The Arduino library "Time.h" ensures that the seconds are strictly in time. Also two libraries from Adafruit are integrated to power the LCD display. The LCD background light is set by pulse-width modulation (PWM), mapped from a photo resistor value.
 
+[Open the source code of this box](hardware_code/Write_boxes/DigitalClock_paul)
 
-[Open the source code of this box](hardware_code/Read_boxes/Stove_nina)
-
-___________________________
+***
 
 ### Elevator
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+This Read Box by Daniel Boubet visualizes an elevator. Using a self-constructed LED display, this box counts the stories up to the 9th floor, where it is returning.
 
-![IMAGE](images/X.jpg)
+![IMAGE](images/elevator.jpg)
 
-##### Construction
+![IMAGE](images/elevator2.jpg)
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+[Open the source code of this box](hardware_code/Read_boxes/Elevator_daniel)
 
-##### Code
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-
-[Open the source code of this box](hardware_code/Read_boxes/Stove_nina)
-
-___________________________
+***
 
 ### Ventilator
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+Daniel Boubet designed this Read Box. A built-in DC motor rotates a laser cut rotor, which is mounted on the top surface. As the box receives an incoming signal, the ventilator moves for a few seconds.
 
-![IMAGE](images/X.jpg)
+![IMAGE](images/ventilator.jpg)
 
-##### Construction
+[Open the source code of this box](hardware_code/Read_boxes/Fan_daniel)
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-
-##### Code
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-
-[Open the source code of this box](hardware_code/Read_boxes/Stove_nina)
-
-___________________________
+***
 
 ### Traffic lights
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+Sujing Lin designed this traffic lights box. As the box receives a signal from any connected box, the lights switches from red, orange to green and back.
 
-![IMAGE](images/X.jpg)
+![IMAGE](images/trafficLights.jpg)
 
-##### Construction
+[Open the source code of this box](hardware_code/Read_boxes/TrafficLights_sujing)
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-
-##### Code
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-
-[Open the source code of this box](hardware_code/Read_boxes/Stove_nina)
-
-___________________________
+***
 
 ### Lamp
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+This box by Sujing Lin is a Lamp which can be controlled by incoming signals like an IoT Lamp. In the inside the box is separated into four quarters to shine into multiple directions. The lightning is provided by a bunch of LEDs.
 
-![IMAGE](images/X.jpg)
+![IMAGE](images/lamp.jpg)
 
-##### Construction
+[Open the source code of this box](hardware_code/Read_boxes/Lamp_sujing)
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-
-##### Code
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-
-[Open the source code of this box](hardware_code/Read_boxes/Stove_nina)
-
-___________________________
+***
 
 ### Stove Box
 

@@ -35,7 +35,7 @@ I designed two scenarios of typical human-like action during work. I chose these
 
 ### "I'm happy to serve you"
 
-When the subject of my prototype stops using their hands to work on some object or assembly line, a natural gesture is to let the hands fall next to the hip. If the subject does this, the contact on the ribbon of his right arm gets connected to the one on his hip. This triggers the voice output "I'm happy to serve you" to remind the worker to keep working.
+When the subject of my prototype stops using their hands to work on some object or assembly line, a natural gesture is to let the hands fall next to the hip. If the subject would do this, the contact on the ribbon of his right arm gets connected to the one on his hip. This triggers the voice output "I'm happy to serve you" to remind the worker to keep working.
 
 ### "I'm not tired yet"
 
@@ -43,4 +43,4 @@ A contact which is sticked on a chair triggers "I'm not tired yet" when the subj
 
 ## User test
 
-The feedback of the user testing I conducted was that people where interested into the concept and it was thought-provoking, however they didn't identify themselves with the artificial voice. I'm unsure if this really necessary. It would be interesting to test the system in real-life workplaces in order to test their impact on the workers performance.
+The feedback of the user testing I conducted was that people where interested into the concept and it was thought-provoking, however they didn't identify themselves with the artificial voice, although I am unsure if this is really necessary. It would be interesting to experiment with the system in real-life workplaces in order to test their impact on the workers performance.

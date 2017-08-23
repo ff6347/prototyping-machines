@@ -25,7 +25,7 @@ Daniel Boubet and Paul Roeder collaborated to prototype an "irascible iron". Sin
 
 For this reason we envisioned the story around the fictional "FHP Brainlink Research Group", working on a novel brain interface technology that enables research subjects to control objects just by using there mind. In this way even domestic appliances can be controlled.
 
-As our video-prototype tries to prove: The technology works well and the required hardware is minimal (just a blinking head). The video shows a guy precisely ironing a shirt. However, since the object does exactly what the subject feels, there is a major unsolved problem: As the subject gets angry and doesn't want to iron anymore, the iron won't iron as well. The reason is a lack of "emotional stability", a feature which is not yet considered by the technology.
+As our video-prototype wants to prove: the technology works well and the required hardware is minimal (just a blinking head). The video shows a guy precisely ironing a shirt. However, since the object does exactly what the subject feels, there is a major unsolved problem: As the subject gets angry and doesn't want to iron anymore, the iron won't iron as well. The reason is a lack of "emotional stability", a feature which is not yet considered by the technology.
 
 In this way we had an irascible iron.
 
@@ -35,7 +35,7 @@ To create a plausible and entertaining video, we made use of some video techniqu
 
 ### Motion tracking
 
-To introduce the researcher we animated a chyron which moves with the speakers face by motion-tracking the nose and mapping it to the text position.
+To introduce the researcher we animated a chyron which moves with his face by motion-tracking the nose and mapping it to the text position.
 
 ### Stop motion
 
@@ -43,4 +43,4 @@ The rotating box is controlled by the subjects mind and moves around. We manuall
 
 ### Look and feel
 
-To create an authentic look and feel of the video, we found the interface lab in our university the right place for our scenario. Furthermore we hang up some prints of scientific visuals. We filmed the story as an interview, since this is a common format to present research results.
+To create an authentic look and feel of the video, we found the interface lab in our university the right place to film our scenario. Furthermore we hang up some prints of scientific visuals. We filmed the story as an interview, since this is a common format to present research results.
