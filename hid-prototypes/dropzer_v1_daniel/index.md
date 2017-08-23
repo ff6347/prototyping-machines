@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Dropzer V 1.0 – Water drop based sequencer –"
+title: "Dropzer V 1.0"
 author: "Daniel Boubet"
 author-url: ""
-summary: "Hacking a keyboard to make humans compatible again."
+summary: "Water drop based sequencer "
 ---
 # Dropzer V 1.0 – Water drop based sequencer –
-![Front](dropzer_v1_daniel/splash.png)
+![Front](images/front.png)
 This keyboard hack is about music and nature, as an electronic music maker I always had the interest of mechanizing sound. Triggering notes automatically and programming sound from a sequencer. The main idea of this keyboard hack is to sequence notes in a non common fashion. This controller involves two worlds that has been always separated by a prohibitive distance. Less people think that to mix water and electronic its not a good idea because water is conductive, just like a wire. If we use it in a controlled environment we can make interesting approaches. Furthermore, I have always noticed the big presence of the sound of a water drop, this constant sequence of falling again and again make me wonder if I could actually use this resource as a sequencer.
 
 
@@ -19,6 +19,7 @@ So I decided to give a try with aluminum foil and thinking about a trigger syste
 
 For regulate the flow of drops I used the typical water drop regulators for gardening. The feeling is really similar to a potentiometer, used to sequence notes with an analog sequencer.
 
+![Sleve](images/regulador.png)
 The structure for holding the other part of the contact its made of drinking straws and aluminum foil.
 
 After a lot of hot glue and being afraid to not wet my computer came the moment for a musical test!
@@ -26,11 +27,13 @@ After a lot of hot glue and being afraid to not wet my computer came the moment 
 
 ## Setting up!
 The setup was easy. Every trigger it’s linked to a key on the keyboard. I have chosen 4 letters. The software used is Ableton Live. This software allows to trigger MIDI notes from the keyboard. So the big part of the job was already made! To give more variety of sounds I attached two MIDI effects to the incoming notes. A pitch controller and a scale generator. Both effects were linked to an extra MIDI controller. An audio delay was also used to enrich the sound.
+![Placa](images/placa.png)
 
 
 ## User test
 
 I asked some friends to give a try with my new sequencer. This people were involved with electronic music, the most of them not. Its was wonderful to see how they got the understanding to use this “Water Based Sequencer” without further instructions. The instrument was an interactive interface.
+[Vimeo](https://vimeo.com/230779001)
 
 ## Conclusions
 
