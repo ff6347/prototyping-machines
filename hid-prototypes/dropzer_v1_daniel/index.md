@@ -22,11 +22,16 @@ After a lot of hot glue and being afraid to not wet my computer came the moment 
 The setup was easy. Every trigger it’s linked to a key on the keyboard. I have chosen 4 letters. The software used is Ableton Live. This software allows to trigger MIDI notes from the keyboard. So the big part of the job was already made! To give more variety of sounds I attached two MIDI effects to the incoming notes. A pitch controller and a scale generator. Both effects were linked to an extra MIDI controller. An audio delay was also used to enrich the sound.
 
 
-
-### "I'm not tired yet"
-
-A contact which is sticked on a chair triggers "I'm not tired yet" when the subject sits down. For this purpose a third ribbon is bind on the upper leg with a contact on the back side. This voice output is supposed to extend workers endurance by self-manipulation.  
-
 ## User test
 
-The feedback of the user testing I conducted was that people where interested into the concept and it was thought-provoking, however they didn't identify themselves with the artificial voice, although I am unsure if this is really necessary. It would be interesting to experiment with the system in real-life workplaces in order to test their impact on the workers performance.
+I asked some friends to give a try with my new sequencer. This people were involved with electronic music, the most of them not. Its was wonderful to see how they got the understanding to use this “Water Based Sequencer” without further instructions. The instrument was an interactive interface.
+
+## Conclusions
+
+Working with this keyboard hack it has been a great experience and open my knowledge to unknown fields. The form that took the aluminum foil trigger of a sleeve was really surprising and also a beautiful manifestation from the common sense of the nature. This brought me to the thought of, as we are run out of ideas, many times the answer its near to us, just give a break of thinking, maybe you will find the answer in the nature. Just like the most of the technologic approaches are inspired in animals, insects and phenomena of our nature.
+
+I really liked the sequence of water drops. They are not completely accurate; it has a certain groove. This make the act of playing electronic music very organically.
+
+I have the wish to build this controller in a more stable way. I would like to get out of the prototyping phase and build it with a better structure, better triggers, and a integrated MIDI controller.
+
+
