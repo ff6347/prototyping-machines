@@ -116,18 +116,37 @@ The box connects to the internet using its built-in Wi-Fi module to request the 
 
 ### Elevator
 
+<<<<<<< HEAD
 This Read Box by Daniel Boubet visualizes an elevator. Using a self-constructed LED display, this box counts the stories up to the 9th floor, where it is returning.
+=======
+The Box built by Daniel Boubet represents an elevator floor  counter, which counts from the E (Erdgeschoss) to 9 and backwards. The counter will be activated as soon receives an input signal from another box. Every time the Counter makes a cycle, the Box will send a Signal.
+
+![IMAGE](images/X.jpg)
+
+##### Construction
+
+The counter is built based on a 7 segment counter. Rows of orange leds connected in parallel are placed behind an Acrylglas surface which has been accurately lasercutted and fitted into the cardboard. Every row of leds its separated about 2,5mm from the Acrylglas, in this way the leds will blur. To have a better backlight reflection the rows has been encapsulated in reflecting paper around. 
+
+>>>>>>> 4c225c9213c72377bfc7b91ffff32f55817c3b12
 
 ![IMAGE](images/elevator.jpg)
 
+<<<<<<< HEAD
 ![IMAGE](images/elevator2.jpg)
 
 [Open the source code of this box](hardware_code/Read_boxes/Elevator_daniel)
+=======
+The Code uses the <Ticker.h> library that allows a count from 0 to 9. A shift register was necessary in order to get more Outputs from the board to control several rows of leds.
+
+
+[Open the source code of this box](hardware_code/Write_boxes/Daniel_elevator)
+>>>>>>> 4c225c9213c72377bfc7b91ffff32f55817c3b12
 
 ***
 
 ### Ventilator
 
+<<<<<<< HEAD
 Daniel Boubet designed this Read Box. A built-in DC motor rotates a laser cut rotor, which is mounted on the top surface. As the box receives an incoming signal, the ventilator moves for a few seconds.
 
 ![IMAGE](images/ventilator.jpg)
@@ -135,6 +154,23 @@ Daniel Boubet designed this Read Box. A built-in DC motor rotates a laser cut ro
 [Open the source code of this box](hardware_code/Read_boxes/Fan_daniel)
 
 ***
+=======
+This box was built to simulate a normal household ventilator.
+
+![IMAGE](images/X.jpg)
+
+##### Construction
+The ventilator has been lasercutted on cardboard and it's driven by a 3v taken from a servomotor.
+##### Code
+The code makes the ventilator run for 10 seconds everytime that recieves an input signal. The ventilator will send aswell a signal every cicle.
+
+
+
+
+[Open the source code of this box](hardware_code/Write_boxes/Ventilator_Daniel)
+
+___________________________
+>>>>>>> 4c225c9213c72377bfc7b91ffff32f55817c3b12
 
 ### Traffic lights
 
