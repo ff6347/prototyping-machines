@@ -1,5 +1,9 @@
 ---
-
+layout: default
+title: "TDropzer V 1.0 – Water drop based sequencer –"
+author: "Daniel Boubet"
+author-url: ""
+summary: "Hacking a keyboard to make humans compatible again."
 ---
 # Dropzer V 1.0 – Water drop based sequencer –
 This keyboard hack is about music and nature, as an electronic music maker I always had the interest of mechanizing sound. Triggering notes automatically and programming sound from a sequencer. The main idea of this keyboard hack is to sequence notes in a non common fashion. This controller involves two worlds that has been always separated by a prohibitive distance. Less people think that to mix water and electronic its not a good idea because water is conductive, just like a wire. If we use it in a controlled environment we can make interesting approaches. Furthermore, I have always noticed the big presence of the sound of a water drop, this constant sequence of falling again and again make me wonder if I could actually use this resource as a sequencer.
