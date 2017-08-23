@@ -33,7 +33,7 @@ The setup was easy. Every trigger it’s linked to a key on the keyboard. I have
 ## User test
 
 I asked some friends to give a try with my new sequencer. This people were involved with electronic music, the most of them not. Its was wonderful to see how they got the understanding to use this “Water Based Sequencer” without further instructions. The instrument was an interactive interface.
-[Vimeo](https://vimeo.com/230779001)
+[Watch the user test on Vimeo!](https://vimeo.com/230779001)
 
 ## Conclusions
 
