@@ -2,23 +2,16 @@
 layout: default
 title: "Alfredo"
 author: "Nina Botthof"
-author-url: "PUT ONE ONLINE PRESENSE HERE (TWITTER, INCOM, GITHUB, ETC)"
+author-urls: "https://github.com/n-botthof"
 summary: "A cup, which helps to organise and automat your morning routine."
+type: "hid"
 ---
-
-
 
 ## Assignment
 
-###### 
-
 The task of this prototype was to give a physical representation to a digital action. This had to be achieved by a HID-Hack — the disassembling and repurposing of a human interface device e. g. a keyboard. In order to evaluate the prototype, user tests with at least five participants had to be carried out.
 
-
-
 ## Idea: Alfredo
-
-
 
 The Idea behind Alfredo is the automation of one’s daily morning routine. The aim was to create a cup, that does not only set a timer by itself, but helps to get off to work on time and to choose the appropriate clothing for the weather outside.
 As soon as water is poured into the cup, it sets a timer for a predetermined time. When the time is over, an iMessage is sent to one’s Phone. Additionally, Alfredo activates a certain playlist in iTunes to provide a relaxing atmosphere. While the timer is running Alfredo suggests articles from news sites to read during the brewing time. A special feature is that the articles are filtered by reading time, so one can finish reading the article until the tea is ready.

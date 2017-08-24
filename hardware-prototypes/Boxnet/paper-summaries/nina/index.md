@@ -1,9 +1,12 @@
 ---
+layout: default
 author: Nina Botthof
+title: Summary of "Box. Open System for Connected People" by Nina Botthof
 date: 2017-05-22 09:07
+type: "paper"
 ---
 
-# Summary of "Box. Open System for Connected People" _Thesis by Victor Vina - by Nina Botthof_
+
 
 Digital media is an essential part of our everyday lives, but the possibilities within the dominant user paradigms are limited. To overcome the gap between the virtual and the physical world we need to find new, revolutionary ways to interact with digital information. The box system proposes to create a environment that couples virtual & actual space by building a network of information objects.  
 

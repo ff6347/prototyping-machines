@@ -1,21 +1,22 @@
 ---
 layout: default
-title: "The machine is talking"
+title: "The Machine Is Talking"
 author: "Paul Roeder"
-author-url: "https://paulroeder.com"
+author-urls:
+  - "https://paulroeder.com"
 summary: "Hacking a keyboard to make humans compatible again."
+type: hid
 ---
-# The Machine is Talking
 
-![The machine is talking](images/bild-detail5.jpg)
-
+<!-- ![The machine is talking](images/bild-detail5.jpg)
+ -->
 As I begun this keyboard hacking project I read Martin Fords book ["Rise of the Robots: Technology and the Threat of a Jobless Future"](https://www.amazon.de/Rise-Robots-Technology-Threat-Jobless/dp/0465097537) in which he points up how the role of labour will dramatically change in the near future. All jobs that can be automated by machines, will be automated eventually.
 
 Until the remaining jobs are replaced by machines, human workers will have to compete against them. Their workplaces are increasingly optimized, automatized and standardized. This inspired me to experiment on how humans feel when computers interfere into their job on a extremely personal level.
 
 ## Digital slave
 
-My critical concept envisions a scenario of a digitally augmented worker who is doing a very 	monotonous task. However as he behaves like a human, the connected computer reinterprets his natural body language and outputs artificial voice on their behalf.
+My critical concept envisions a scenario of a digitally augmented worker who is doing a very monotonous task. However as he behaves like a human, the connected computer reinterprets his natural body language and outputs artificial voice on their behalf.
 
 ![Zipper ribbon on my arm](images/bild-detail4.jpg)
 

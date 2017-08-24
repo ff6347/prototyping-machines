@@ -1,9 +1,11 @@
 ---
+layout: default
 author: Daniel Boubet
+title: Summary of "Box. Open System for Connected People" by Daniel Boubet
 date: 2017-05-22 09:07
+type: "paper"
 ---
 
-# Summary of "Box. Open System for Connected People" _Thesis by Victor Vina - by Daniel Boubet_
 
 
 Objectives

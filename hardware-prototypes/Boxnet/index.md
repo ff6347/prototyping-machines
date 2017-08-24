@@ -1,19 +1,29 @@
 ---
 layout: default
-title: "Boxnet
-author: "Paul Roeder, Sujing Lin, Daniel Boubet, Nina Botthof"
-author-url: ""
+title: Boxnet
+authors:
+  - "Paul Roeder"
+  - "Sujing Lin"
+  - "Daniel Boubet"
+  - "Nina Botthof"
+author-urls:
+  - https://github.com/paulroeder
+  - https://github.com/sujingL
+  - https://github.com/DerCritter
+  - https://github.com/n-botthof
 summary: "An indefinitely expandable, distributed network of connected boxes."
+type: "hw"
 ---
 
 # Box-Net
 
 Our interactive installation "Boxnet" is a decentralized and expandable network of boxes and illustrates the connectivity of everyday devices.
 
-[![The irascible iron](images/trailer.png)](https://vimeo.com/230505896?autoplay=1)
+<iframe src="https://player.vimeo.com/video/230505896" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-[Watch the trailer on Vimeo](https://vimeo.com/230505896)
+<!-- [![The irascible iron](images/trailer.png)](https://vimeo.com/230505896?autoplay=1) -->
 
+<!-- [Watch the trailer on Vimeo](https://vimeo.com/230505896) -->
 ## Concept
 
 As the everyday life is increasingly digitalized and a rising amount of devices are connected to the Internet of Things (IoT), security issues potentially become more crucial than ever before. Hence we considered in an early version of our concept a virus, that spreads in the network and flaws the boxes functionality. The original mode could only have been restored by pressing a physical patch button on the box. Users would connect as much boxes as possible while keeping the network uninfected. Due to the complexity of our system we decided to go for simplicity and focus on the interaction between the boxes.
@@ -39,7 +49,8 @@ Each group member contributed two unique boxes to our Boxnet network. We standar
 
 We laser cut the boxes out of binder's board. The templates can be found in the [construction folder](box_construction).
 
-### XNodes library
+### XNodes library  
+
 The communication within the Boxnet network is running on the [XNodes library](https://github.com/FH-Potsdam/XNodes) from Fabian Morón Zirfas.  
 
 ## Boxes
@@ -72,7 +83,7 @@ On one edge of the box is a cut-out window. The camera is located inside the box
 
 One main challenge of this box was to switch the LED on and off and move the motor  simultaneously. Normally only one action can be executed at a time. To solve this problem `TimedAction.h` has been used. It helps coordinating multiple actions by defining intervals.
 
-[Open the source code of this box](hardware_code/Write_boxes/Camera_nina)
+[Open the source code of this box](hardware_code/Write_boxes/Camera_nina/)
 
 ***
 
@@ -90,7 +101,7 @@ On the upper surface of the box is a 4x4 keypad, a green and red LED and a hole 
 
 The code tracks the pressed keys and adds them to a string variable which deletes itself if its length exceeds more than four characters. If the string equals the valid password "1234", the red light switches of and the green LED will be turned on for a few seconds. Also their is a sound feedback coming from the piezo.
 
-[Open the source code of this box](hardware_code/Write_boxes/SecurityGate_paul)
+[Open the source code of this box](hardware_code/Write_boxes/SecurityGate_paul/)
 
 ***
 
@@ -110,7 +121,7 @@ The Nokia 5110 LCD is sticked behind acrylic glass and sets its background light
 
 The box connects to the internet using its built-in Wi-Fi module to request the current time from a time server. The Arduino library "Time.h" ensures that the seconds are strictly in time. Also two libraries from Adafruit are integrated to power the LCD display. The LCD background light is set by pulse-width modulation (PWM), mapped from a photo resistor value.
 
-[Open the source code of this box](hardware_code/Write_boxes/DigitalClock_paul)
+[Open the source code of this box](hardware_code/Write_boxes/DigitalClock_paul/)
 
 ***
 
@@ -128,7 +139,7 @@ The counter is built based on a 7 segment counter. Rows of orange leds connected
 
 The Code uses the <Ticker.h> library that allows a count from 0 to 9. A shift register was necessary in order to get more Outputs from the board to control several rows of leds.
 
-[Open the source code of this box](hardware_code/Read_boxes/Elevator_daniel)
+[Open the source code of this box](hardware_code/Read_boxes/Elevator_daniel/)
 
 ***
 
@@ -144,7 +155,7 @@ The ventilator has been laser cutted on cardboard and it's driven by a 3v taken 
 ##### Code
 The code makes the ventilator run for 10 seconds every time that receives an input signal. The ventilator will send as well a signal every circle.
 
-[Open the source code of this box](hardware_code/Write_boxes/Ventilator_daniel)
+[Open the source code of this box](hardware_code/Write_boxes/Ventilator_daniel/)
 
 ***
 
@@ -154,7 +165,7 @@ Sujing Lin designed this traffic lights box. As the box receives a signal from a
 
 ![IMAGE](images/trafficLights.jpg)
 
-[Open the source code of this box](hardware_code/Read_boxes/TrafficLights_sujing)
+[Open the source code of this box](hardware_code/Read_boxes/TrafficLights_sujing/)
 
 ***
 
@@ -164,7 +175,7 @@ This box by Sujing Lin is a Lamp which can be controlled by incoming signals lik
 
 ![IMAGE](images/lamp.jpg)
 
-[Open the source code of this box](hardware_code/Read_boxes/Lamp_sujing)
+[Open the source code of this box](hardware_code/Read_boxes/Lamp_sujing/)
 
 ***
 
@@ -186,4 +197,4 @@ On the upper side of the box are four holes cut out for the cooktop which has be
 
 A major problem with this box was the fading of the LEDs. The use of a shift registry was discarded, because this made fading very difficult. Thus the final implementation has been made with a reduced number of LEDs connected in parallel. Then the fading was accomplished by using pulse-width modulation.
 
-[Open the source code of this box](hardware_code/Read_boxes/Stove_nina)
+[Open the source code of this box](hardware_code/Read_boxes/Stove_nina/)

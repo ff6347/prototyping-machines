@@ -1,6 +1,9 @@
 ---
+layout: default
 author: Paul Roeder
 date: 2017-05-22 09:07
+title: Summary of "Box. Open System for Connected People" by Paul Roeder
+type: "paper"
 references:
 - id: Jeremijenko
   title: ""
@@ -8,7 +11,7 @@ references:
   - family: Jeremijenko
 ---
 
-# Summary of "Box. Open System for Connected People" _A thesis by Victor Vina - by Paul Roeder_
+
 
 ## Social aspects
 

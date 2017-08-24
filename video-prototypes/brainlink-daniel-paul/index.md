@@ -4,9 +4,8 @@ title: "Brainlink Research Lab"
 author: "Daniel Boubet, Paul Roeder"
 author-url: "http://paulroeder.com - https://incom.org/profil/7955"
 summary: "We video-prototyped a brain interface to control a domestic device."
+type: "video"
 ---
-
-# Brainlink Research Lab
 
 ## Introduction
 

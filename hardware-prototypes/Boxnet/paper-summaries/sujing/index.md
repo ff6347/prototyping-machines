@@ -1,9 +1,12 @@
 ---
+layout: default
 author: Sujing Lin
 date: 2017-05-22 09:07
+type: "paper"
+title: Summary of "Box. Open System for Connected People" by Sujing Lin
 ---
 
-# Summary of "Box. Open System for Connected People" _Thesis by Victor Vina - by Sujing Lin_
+
 
 ## Premises
 
