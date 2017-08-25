@@ -64,6 +64,8 @@ In order to “prototype machines”, we used a series of exercises to familiari
 {% endif %}
 {% endfor %}
 
+## TL;DR  
+
 <div class="block"><p>
 Read also the summaries of Victor Vinas thesis “Box. Open System for Connected People” which was the basis for the hardware prototypes.  
 <ul>

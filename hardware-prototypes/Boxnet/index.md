@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Boxnet
+title: Box-Net
 authors:
   - "Paul Roeder"
   - "Sujing Lin"
@@ -15,7 +15,6 @@ summary: "An indefinitely expandable, distributed network of connected boxes."
 type: "hw"
 ---
 
-# Box-Net
 
 Our interactive installation "Boxnet" is a decentralized and expandable network of boxes and illustrates the connectivity of everyday devices.
 
@@ -23,7 +22,8 @@ Our interactive installation "Boxnet" is a decentralized and expandable network 
 
 <!-- [![The irascible iron](images/trailer.png)](https://vimeo.com/230505896?autoplay=1) -->
 
-<!-- [Watch the trailer on Vimeo](https://vimeo.com/230505896) -->
+<!-- [Watch the trailer on Vimeo](https://vimeo.com/230505896) -->  
+
 ## Concept
 
 As the everyday life is increasingly digitalized and a rising amount of devices are connected to the Internet of Things (IoT), security issues potentially become more crucial than ever before. Hence we considered in an early version of our concept a virus, that spreads in the network and flaws the boxes functionality. The original mode could only have been restored by pressing a physical patch button on the box. Users would connect as much boxes as possible while keeping the network uninfected. Due to the complexity of our system we decided to go for simplicity and focus on the interaction between the boxes.
