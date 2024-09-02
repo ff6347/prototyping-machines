@@ -5,5 +5,5 @@ title: Digital Clock Source Code
 ---
 
 ```cpp
-{% include_relative DigitalClock_paul.ino %}
+{% include_relative "DigitalClock_paul.ino" %}
 ```

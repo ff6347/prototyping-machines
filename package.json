@@ -1,0 +1,20 @@
+{
+  "name": "prototyping-machines",
+  "version": "0.1.0",
+  "description": "Prototyping Machines",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "ff6347 <hash@ff6347.email>",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "2.0.1",
+    "sass": "1.77.8"
+  },
+  "dependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0"
+  }
+}
