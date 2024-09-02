@@ -5,5 +5,5 @@ title: Stove Source Code
 ---
 
 ```cpp
-{% include_relative Stove_nina.ino %}
+{% include_relative "Stove_nina.ino" %}
 ```

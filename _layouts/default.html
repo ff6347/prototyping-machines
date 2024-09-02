@@ -1,36 +1,63 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>{{page.title}}</title>
-  <meta name="description" content="someThis is the documentation for the seminar “prototyping machines” by Fabian Morón Zirfas @ University of Applied Sciences Potsdam (Germany) in summer 2017.thing">
-  <meta name="author" content="Fabian Morón Zirfas">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>{{page.title}}</title>
+    <meta
+      name="description"
+      content="someThis is the documentation for the seminar “prototyping machines” by Fabian Morón Zirfas @ University of Applied Sciences Potsdam (Germany) in summer 2017.thing"
+    />
+    <meta name="author" content="Fabian Morón Zirfas" />
 
-  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/styles.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{site.baseurl}}/assets/css/styles.css"
+    />
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-</head>
-<body>
-<header><nav>
-  <a href="{{site.baseurl}}/">Home</a>
-</nav></header>
-<h1 id="headline">{{page.title}} {% if page.author != null %}by {{page.author}}{% endif %}</h1>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="{{site.baseurl}}/">Home</a>
+      </nav>
+    </header>
+    <h1 id="headline">
+      {{page.data.title}} {% if page.data.author != null %}by
+      {{page.data.author}}{% endif %}
+    </h1>
 
-<div id="splash"><img src="{{site.baseurl}}/{{page.url}}/splash.png" alt=""></div>
-<div id="main">{{content}}</div>
-<footer>
-  <div class="foot font_small">
-    <p>
-      Build with <a href="http://jekyllrb.com/" target="blank">jekyll</a> by <a href="https://github.com/fabianmoronzirfas" target="blank">Fabian Morón Zirfas</a> for <a href="http://www.fh-potsdam.de/" target="blank">University of Applied Sciences Potsdam (Germany)</a> as documentation for the seminar “Prototyping Machines” in summer 2017.
-    </p>
-  </div>
-</footer>
-  <script type="text/javascript" src="{{site.baseurl}}/assets/js/main.js"></script>
-</body>
+    <div id="splash">
+      <img src="{{site.baseurl}}{{page.url}}splash.png" alt="" />
+    </div>
+    <div id="main">{{content}}</div>
+    <footer>
+      <div class="foot font_small">
+        <p>
+          Build with
+          <a href="https://www.11ty.dev/" target="blank">Eleventy</a> by
+          <a href="https://github.com/ff6347" target="blank"
+            >Fabian Morón Zirfas</a
+          >
+          for
+          <a href="http://www.fh-potsdam.de/" target="blank"
+            >University of Applied Sciences Potsdam (Germany)</a
+          >
+          as documentation for the seminar “Prototyping Machines” in summer
+          2017.
+        </p>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="{{site.baseurl}}/assets/js/main.js"
+    ></script>
+  </body>
 </html>
